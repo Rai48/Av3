@@ -1,15 +1,15 @@
 
 <?php
 
-require "../src/php/vendor/autoload.php";
+require "vendor/autoload.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require "../src/php/vendor/phpmailer/phpmailer/src/Exception.php";
-require "../src/php/vendor/phpmailer/phpmailer/src/PHPMailer.php";
-require "../src/php/vendor/phpmailer/phpmailer/src/SMTP.php";
+require "vendor\phpmailer\phpmailer\src\Exception.php";
+require "vendor\phpmailer\phpmailer\src\PHPMailer.php";
+require "vendor\phpmailer\phpmailer\src\SMTP.php";
 
 
 $mail = new PHPMailer(true);
