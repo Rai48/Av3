@@ -1,0 +1,82 @@
+/* Barra de pesquisa */
+.search-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#searchInput {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Botão de pesquisa */
+#searchButton {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Resultados da pesquisa */
+
+.search-results {
+    margin-bottom: 80px; /* Altura do seu footer + alguma margem extra para separação */
+    box-sizing: border-box; /* Inclui a margem no cálculo total da altura do elemento */
+}
+
+.search-results h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.search-results div {
+    background-color: #444; /* Cinza escuro */
+    color: #fff; /* Texto branco */
+    margin-bottom: 20px; /* Espaçamento inferior entre os resultados */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Borda arredondada */
+}
+
+/* Estilo para o título (h3) dentro do contêiner */
+.search-results div h3 {
+    margin-bottom: 10px; /* Espaçamento inferior entre o título e os parágrafos */
+}
+
+/* Estilo para os parágrafos dentro do contêiner */
+.search-results div p {
+    margin-bottom: 8px; /* Espaçamento inferior entre os parágrafos */
+}
+
+/* Estilo para o link (a) dentro do contêiner */
+.search-results div a {
+    display: inline-block; /* Torna o link um bloco para definir largura e altura */
+    padding: 10px 15px; /* Espaçamento interno */
+    background-color: #000; /* Preto */
+    color: #fff; /* Texto branco */
+    text-decoration: none; /* Remove a sublinhado padrão do link */
+    border-radius: 20px; /* Borda arredondada para criar um botão */
+}
+
+/* Estilo para o link (a) quando hover (passar o mouse sobre) */
+.search-results div a:hover {
+    background-color: #333; /* Tonalidade mais escura ao passar o mouse sobre o botão */
+}
+
+@media (max-width: 320px) {
+    .search-container {
+        min-width: 320px;
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #searchButton{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem 5rem 2rem;
+    }
+    
+}

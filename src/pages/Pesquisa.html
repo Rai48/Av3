@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa</title>
+
+    <link rel="stylesheet" href="../style/pesquisa.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">MEDCARE</div>
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="../../index.html">Home</a></li>
+                <li class="nav-item"><a href="./SobreNos.html">Sobre Nos</a></li>
+                <li class="nav-item"><a href="./Contato.html">Contato</a></li>
+                <li class="nav-item"><a href="./Pesquisa.html">Pesquise</a></li>
+                <li class="nav-item"><a href="./Dicas.html">Recomendações</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img src="../img/menu_white_36dp.svg" alt="icone menu" class="icon"></button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="../../index.html">Home</a></li>
+                <li class="nav-item"><a href="./SobreNos.html">Sobre Nos</a></li>
+                <li class="nav-item"><a href="./Contato.html">Contato</a></li>
+                <li class="nav-item"><a href="./Pesquisa.html">Pesquise</a></li>
+                <li class="nav-item"><a href="./Dicas.html">Recomendações</a></li>
+        </ul>
+    </div>
+    
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Pesquisar por doenças...">
+        <button id="searchButton">Pesquisar</button>
+    </div>
+
+    <div id="searchResults" class="search-results"></div>
+
+    <footer>
+        <p class="cp-text">
+            © Copyright 2023 André Luiz Belmiro de Albuquerque Junior. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

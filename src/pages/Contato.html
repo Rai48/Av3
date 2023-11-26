@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCare - Contato</title>
+
+    <link rel="stylesheet" href="../style/contato.css">
+    <link rel="stylesheet" href="../style/style.css">
+
+    <script src="../js/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">MEDCARE</div>
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="../../index.html">Home</a></li>
+                <li class="nav-item"><a href="./SobreNos.html">Sobre Nos</a></li>
+                <li class="nav-item"><a href="./Contato.html">Contato</a></li>
+                <li class="nav-item"><a href="./Pesquisa.html">Pesquise</a></li>
+                <li class="nav-item"><a href="./Dicas.html">Recomendações</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img src="../img/menu_white_36dp.svg" alt="icone menu" class="icon"></button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="../../index.html">Home</a></li>
+                <li class="nav-item"><a href="./SobreNos.html">Sobre Nos</a></li>
+                <li class="nav-item"><a href="./Contato.html">Contato</a></li>
+                <li class="nav-item"><a href="./Pesquisa.html">Pesquise</a></li>
+                <li class="nav-item"><a href="./Dicas.html">Recomendações</a></li>
+        </ul>
+    </div>
+    
+    
+    <section class="contato">
+        <div class="container2">
+            <div class="contato-form">
+                <h1>Contate Nos</h1>
+                <p>Entre em contato caso tenha alguma sugestão para o site ou encontre algum erro!</p>
+                <form action="../php/send-email.php" method="post" enctype="multipart/form-data" id="my-form">
+                    <input type="text" name="name" id="name" placeholder="Coloque Seu Nome" required>
+                    <input type="email" name="email" id="email" placeholder="Coloque Seu Email" required>
+                    <input type="text" name="assunto" id="assunto" placeholder="Coloque o Assunto" required>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Coloque Sua Mensagem"></textarea>
+                    <input type="file" id="arquivo" name="attachment">
+                    <button type="submit" name="send" class="btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="contato-img">
+            <img src="../img/Contato.jpg" alt="Ilustração de envio de um email">
+        </div>
+    </section>
+
+    <footer>
+        <p class="cp-text">
+            © Copyright 2023 André Luiz Belmiro de Albuquerque Junior. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="../js/php.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* ------------------ Contato ----------------- */
+
+.container2{
+    flex-basis: 50%;
+    padding: 3em 4em;
+    background: #353839;
+    border-radius: 8px;
+}
+
+.contato {
+    padding: 40px 15%;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+
+.contato-img img{
+    max-width: 100%;
+    width: 720px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contato-form h1{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.contato-form p{
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+
+.contato-form form{
+    position: relative;
+}
+
+.contato-form form input,form textarea {
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background-color: #393a3a;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+
+.contato-form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.contato-form form input[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+}
+
+/* file upload button hover state */
+.contato-form form input[type="file"]::file-selector-button:hover {
+    background-color: #1a1b1b;
+    color: #84cdee;
+}
+
+  /* file upload button active state */
+.contato-form form input[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
+}
+
+.contato-form form .btn {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    width: 220px;
+    transition: ease .20s;
+    border-radius: 10px;
+}
+
+.contato-form form .btn:hover{
+    color: #84cdee;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+
+}
+
+#input-container input{
+    display: block;
+    background-color: transparent;
+}
+
+@media (max-width: 1570px){
+    section{
+        padding: 80px 3%;
+        transition: .2s;
+    }
+
+    .contato-form p{
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 1090px){
+    .contato{
+        grid-gap: 2rem;
+        transition: .3s;
+
+    }
+}
+
+@media (max-width: 1000px){
+    .contato{
+        grid-template-columns: 1fr;
+    }
+
+    .contato-form{
+        order: 2;
+    }
+
+    .contato-img img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 750px) {
+    .contato {
+      grid-template-columns: 1fr; /* Altera para uma única coluna */
+    }
+  
+    .contato-form {
+      order: 2; /* Altera a ordem do formulário para aparecer abaixo da imagem */
+      padding: 20px; /* Ajuste conforme necessário */
+      font-size: 0.75rem;
+    }
+  
+    .contato-img img {
+      width: 100%; /* Faz com que a imagem se ajuste à largura do contêiner */
+      max-width: none; /* Remove a largura máxima */
+      border-radius: 0; /* Remove a borda arredondada se necessário */
+    }
+
+    .container2 {
+        flex-basis: 100%; /* Define a largura máxima para 100% */
+        max-width: 100%; /* Garante que o contêiner não ultrapasse a largura da tela */
+        padding: 2em; /* Ajuste conforme necessário */
+        margin: auto;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .contato {
+        grid-template-columns: 1fr; /* Altera para uma única coluna */
+        padding: 15px 0px 90px 0px;
+        height: 0 0 2em 0;
+    }
+}
