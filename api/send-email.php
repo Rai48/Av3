@@ -44,7 +44,7 @@ try{
             $mail->AddAttachment($_FILES['attachment']['tmp_name'],$_FILES['attachment']['name'], 'base64',$_FILES['attachment']['type']);
         }
         if(!$mail->Send()) {
-            header('Location: ../pages/Contato.html?envio_mensagem=erro');
+            header('Location: ../src/pages/Contato.html?envio_mensagem=erro');
             exit();
         } else {
             $mail->clearAddresses();
@@ -70,7 +70,7 @@ catch(Exception $e){
     echo $e;
 }
 
-header('Location: ../pages/Contato.html?envio_mensagem=sucesso');
+header('Location: ../src/pages/Contato.html?envio_mensagem=sucesso');
 exit();
 
 ?>
